@@ -208,6 +208,7 @@ li a {
     font-style: normal;
     margin: 0px 10px;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 #div_logo {
@@ -433,4 +434,185 @@ footer p {
     margin: 0;
     width: 50% !important;
     text-align: center;
+}
+
+#titleMobile {
+    display: none;
+}
+
+@media (max-width: 1000px) { 
+    #titlePC {
+        display: none;
+    }
+    
+    #titleMobile {
+        display: block;
+    }
+
+    #poster {
+        max-width: 300px;
+        max-height: 500px;
+        border: 3px solid white;
+        margin-right: 0;
+
+    }
+
+    div#ville {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    div#td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #img_dôme {
+        width: 300px;
+        height: 400px;
+        object-fit: contain;
+    }
+
+    #cryo {
+        width: 100px;
+        height: 300px;
+        object-fit: contain;
+        display: none;
+    }
+
+    #section_vaisseau p {
+        width: 100%;
+    }
+
+    #number_section {
+        padding: 0 !important;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    .number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0px 100px;
+    }
+
+    #div_logo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #div_logo p {
+        width: 100%;
+    }
+
+    #img_créature2 {
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+        margin-left: 0;
+        object-fit: contain;
+    }
+
+    #banner {
+        width: 100%;
+        height: 50%;
+        background-image: url(images/Banner-01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    #logo_main {
+        display: none;
+    }
+
+    #maisons img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    #navette {
+        width: 300px;
+        max-height: 800px;
+        object-fit: contain;
+        display: none;
+    }
+
+    footer nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    footer li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    header li:nth-child(2) {
+        display: none;
+    }
+
+    li a {
+        color: white;
+        font-family: "kallisto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin: 0px;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    #logo_header {
+        width: 150px;
+        height: 50px;
+        object-fit: contain;
+    }
+
+    nav {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    
 }
